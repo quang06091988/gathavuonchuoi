@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gà Thả Vườn Chuối</title>
+<meta name="description" content="Mô hình gà chuối: trồng chuối nuôi gà, bán thẳng không qua trung gian, gà tự ấp nên không phải nhập. Dành cho người muốn làm theo.">
+<meta name="theme-color" content="#ffd23f">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://gathavuonchuoi.vercel.app/">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gathavuonchuoi.vercel.app/">
+<meta property="og:site_name" content="Gà Thả Vườn Chuối">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Mô Hình Gà Chuối – Trồng Chuối Nuôi Gà">
+<meta property="og:description" content="Trồng chuối, nuôi gà, bán thẳng không qua trung gian, gà tự ấp nên không phải nhập.">
+<meta property="og:image" content="https://gathavuonchuoi.vercel.app/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mô Hình Gà Chuối – Trồng Chuối Nuôi Gà: vòng bốn bước trồng chuối, nuôi gà, bán xong, không nhập">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mô Hình Gà Chuối – Trồng Chuối Nuôi Gà">
+<meta name="twitter:description" content="Trồng chuối, nuôi gà, bán thẳng không qua trung gian, gà tự ấp nên không phải nhập.">
+<meta name="twitter:image" content="https://gathavuonchuoi.vercel.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--banana:#ffd23f;--leaf:#0e3b2a;--comb:#b92a14;--cream:#fff6d6;
+--disp:"Baloo 2","Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--sans:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--pad:clamp(1.25rem,5vw,3rem)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;background:var(--leaf)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--banana);color:var(--leaf);font:400 1.05rem/1.55 var(--sans);overflow-x:clip}
+.in{max-width:72rem;margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left));padding-right:max(var(--pad),env(safe-area-inset-right))}
+
+/* Đầu trang */
+.hero{position:relative;overflow:hidden;isolation:isolate;padding:calc(env(safe-area-inset-top,0px) + 1.25rem) 0 3rem;background:radial-gradient(120% 80% at 85% 10%,#ffe27a 0,rgba(255,226,122,0) 60%),var(--banana)}
+.decor{position:absolute;z-index:-1;right:-14%;top:-6%;width:min(95vw,46rem);height:auto;pointer-events:none}
+.brand{display:flex;align-items:center;gap:.6rem;margin:0 0 1.75rem;font:800 1.2rem/1 var(--disp)}
+.brand svg{width:2.2rem;height:2.2rem;border-radius:.65rem}
+h1{margin:0 0 1.5rem;font:800 clamp(2.1rem,8.6vw,3.4rem)/1 var(--disp);letter-spacing:-.015em}
+h1 span{display:block}
+h1 span+span{color:var(--comb)}
+.ring{display:block;width:min(100%,21rem);height:auto;margin:0 auto;overflow:visible}
+.ring text{font-family:var(--sans);font-weight:600;font-size:19px}
+.ring .nm{font-family:var(--disp);font-weight:800;font-size:24px}
+.ring .mid{font-family:var(--disp);font-weight:800;font-size:25px}
+.ring .disc{filter:drop-shadow(0 9px 0 rgba(14,59,42,.18))}
+.nd{cursor:pointer}
+.nd circle{transition:transform .2s ease;transform-box:fill-box;transform-origin:center}
+@media (hover:hover){.nd:hover circle{transform:scale(1.14)}}
+.nd:focus-visible{outline:none}
+.nd:focus-visible circle{stroke-width:8}
+@keyframes up{from{opacity:0;translate:0 1.1rem}to{opacity:1;translate:0 0}}
+@keyframes pop{from{opacity:0;scale:.86}to{opacity:1;scale:1}}
+@media (prefers-reduced-motion:no-preference){
+h1 span{animation:up .7s cubic-bezier(.2,.7,.2,1) both}
+h1 span+span{animation-delay:.12s}
+.brand{animation:up .6s both}
+.ring{animation:pop .8s cubic-bezier(.3,1.3,.5,1) .2s both}}
+
+/* Bốn bước */
+.list{padding:.5rem 0 3rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem}
+.step{position:relative;overflow:hidden;container-type:inline-size;padding:1.3rem 1.35rem 1.5rem;border-radius:1.4rem;color:var(--cream);scroll-margin-top:1rem;rotate:var(--r,0deg);box-shadow:0 .5rem 0 rgba(14,59,42,.22);transition:rotate .25s,translate .25s,box-shadow .25s}
+.step.a{background:radial-gradient(circle at 100% 0,rgba(255,246,214,.12) 0,rgba(255,246,214,0) 55%),var(--leaf)}
+.step.b{background:radial-gradient(circle at 100% 0,rgba(255,210,63,.22) 0,rgba(255,210,63,0) 55%),var(--comb)}
+.step::after{content:attr(data-n);position:absolute;right:.6rem;bottom:-1.6rem;font:800 9rem/1 var(--disp);color:rgba(255,246,214,.09);pointer-events:none}
+.step>*{position:relative;z-index:1}
+.top{display:flex;align-items:center;gap:.75rem}
+.n{flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--banana);color:var(--leaf);font:800 1.3rem/1 var(--disp)}
+.step h2{margin:0;font:800 clamp(1.6rem,6.6vw,1.95rem)/1.1 var(--disp)}
+.stat{margin:1rem 0 .9rem}
+.stat b{display:block;font:800 clamp(2.4rem,11vw,3.9rem)/1 var(--disp);color:var(--banana);letter-spacing:-.02em}
+.stat span{display:block;margin-top:.15rem;font:700 clamp(1.3rem,5.4vw,1.6rem)/1.2 var(--disp)}
+.step p{margin:0;max-width:28rem}
+.step p.claim{max-width:none;margin:1rem 0 .6rem;font:800 clamp(1.1rem,7.4cqw,2.2rem)/1.1 var(--disp);letter-spacing:-.01em;color:var(--banana);white-space:nowrap}
+.step .more{margin-top:.5rem}
+.step a.proof{display:inline-block;margin-top:.8rem;font-weight:600;color:var(--cream);text-underline-offset:.2em;text-decoration-thickness:2px}
+.step a:focus-visible{outline:3px solid var(--banana);outline-offset:3px}
+@media (prefers-reduced-motion:no-preference){
+.rv .step{opacity:0;translate:0 1.6rem;transition:opacity .6s,translate .6s cubic-bezier(.2,.7,.2,1),rotate .25s,box-shadow .25s}
+.rv .step.show{opacity:1;translate:0 0}}
+
+/* Phần cuối */
+.foot{position:relative;overflow:hidden;background:var(--leaf);color:var(--cream);border-radius:2rem 2rem 0 0;padding:.5rem 0 calc(env(safe-area-inset-bottom,0px) + 2.75rem)}
+.foot::before{content:"";position:absolute;right:-6rem;top:-6rem;width:16rem;height:16rem;border-radius:50%;background:radial-gradient(circle,rgba(255,210,63,.28),rgba(255,210,63,0) 70%);pointer-events:none}
+.foot .in{position:relative}
+.blk{padding:2.25rem 0 .25rem}
+.blk h2{margin:0 0 .8rem;font:800 clamp(1.6rem,7vw,2.1rem)/1.1 var(--disp);color:var(--banana)}
+.rows{margin:0;border-top:2px solid rgba(255,246,214,.4)}
+.row{display:grid;gap:.1rem 1.25rem;padding:.8rem 0;border-bottom:2px solid rgba(255,246,214,.2)}
+.row dt{font-weight:600;opacity:.8}
+.row dd{margin:0;font-weight:600}
+.cta{padding:2.5rem 0 0;display:grid;gap:1.1rem}
+.cta p{margin:0;font:800 clamp(1.9rem,8vw,2.8rem)/1.05 var(--disp);letter-spacing:-.01em}
+.btn{display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.6rem;padding:.7rem 1.7rem;border-radius:2rem;background:var(--banana);color:var(--leaf);font:800 1.25rem/1.2 var(--disp);text-decoration:none;box-shadow:0 .3rem 0 rgba(255,246,214,.28);transition:translate .12s,background-color .15s,box-shadow .12s}
+.btn::after{content:"→";transition:translate .2s}
+.btn:hover{background:#ffe07a}
+.btn:hover::after{translate:.25rem 0}
+.btn:active{translate:0 .2rem;box-shadow:none}
+.btn:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:.7rem max(var(--pad),env(safe-area-inset-right)) calc(.7rem + env(safe-area-inset-bottom,0px)) max(var(--pad),env(safe-area-inset-left));background:var(--leaf);transition:transform .25s ease,visibility .25s}
+.bar.off{transform:translateY(105%);visibility:hidden}
+
+@media (min-width:760px){
+.bar{display:none}
+.hero{padding:calc(env(safe-area-inset-top,0px) + 1.75rem) 0 4.5rem}
+.hero .in{display:grid;grid-template-columns:1.1fr .9fr;grid-template-areas:"brand brand" "title ring";align-items:center;column-gap:3rem}
+.decor{right:-4%;top:-12%;width:min(62vw,52rem)}
+.brand{grid-area:brand;margin-bottom:3rem}
+h1{grid-area:title;margin:0;font-size:clamp(2.4rem,4.7vw,4.2rem)}
+.ring{grid-area:ring;width:min(100%,28rem);margin:0 0 0 auto}
+.list{padding:1rem 0 5rem}
+.steps{grid-template-columns:1fr 1fr;gap:1.5rem}
+.step:nth-child(odd){--r:-.7deg}.step:nth-child(even){--r:.7deg}
+.step{padding:1.8rem 1.9rem 2rem}
+.step::after{font-size:11rem}
+.foot{padding-bottom:4.5rem}
+.row{grid-template-columns:minmax(10rem,15rem) 1fr}
+.cta{grid-template-columns:1fr auto;align-items:center;gap:2rem;padding-top:3rem}
+.btn{min-width:17rem}}
+@media (hover:hover) and (min-width:760px){.step:hover{rotate:0deg;translate:0 -.35rem;box-shadow:0 .9rem 0 rgba(14,59,42,.22)}}
+</style>
+</head>
+<body>
+<header class="hero">
+<svg class="decor" viewBox="0 0 600 420" aria-hidden="true"><path d="M10 330C70 130 280 30 590 60C500 190 290 330 10 330Z" fill="#f6bf1c"/><path d="M10 330C200 210 400 110 590 60" stroke="#dca00b" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M120 400C150 250 300 150 560 170C500 290 330 390 120 400Z" fill="#ffe27a"/><path d="M120 400C280 320 420 240 560 170" stroke="#f2c230" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+<div class="in">
+<p class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#0e3b2a"/><path d="M20 12c1 20 9 32 28 36-6 7-23 5-30-8-5-9-4-19 2-28z" fill="#ffd23f"/></svg>Gà Thả Vườn Chuối</p>
+<h1><span>Mô Hình Gà Chuối</span><span>Trồng Chuối Nuôi Gà</span></h1>
+<svg class="ring" viewBox="0 0 360 360" role="group" aria-label="Vòng bốn bước: trồng chuối, nuôi gà, bán xong, không nhập, rồi quay lại trồng chuối">
+<circle class="disc" cx="180" cy="180" r="158" fill="#fff6d6" opacity=".7"/>
+<path d="M180 60A120 120 0 0 0 180 300" fill="none" stroke="#0e3b2a" stroke-width="30"/>
+<path d="M180 300A120 120 0 0 0 180 60" fill="none" stroke="#b92a14" stroke-width="30"/>
+<g fill="#fff6d6"><path d="M49 172h22l-11 20z"/><path d="M172 289v22l20-11z"/><path d="M289 188h22l-11-20z"/><path d="M188 49v22l-20-11z"/></g>
+<text class="mid" x="180" y="176" text-anchor="middle" fill="#0e3b2a">Tự quay</text>
+<text class="mid" x="180" y="204" text-anchor="middle" fill="#0e3b2a">vòng</text>
+<a class="nd" href="#buoc1" aria-label="Bước 1: Trồng chuối"><circle cx="95" cy="95" r="25" fill="#fff6d6" stroke="#0e3b2a" stroke-width="6"/><text class="nm" x="95" y="97" text-anchor="middle" dominant-baseline="central" fill="#0e3b2a">1</text><text x="10" y="40" fill="#0e3b2a">Trồng chuối</text></a>
+<a class="nd" href="#buoc2" aria-label="Bước 2: Nuôi gà"><circle cx="95" cy="265" r="25" fill="#fff6d6" stroke="#0e3b2a" stroke-width="6"/><text class="nm" x="95" y="267" text-anchor="middle" dominant-baseline="central" fill="#0e3b2a">2</text><text x="10" y="336" fill="#0e3b2a">Nuôi gà</text></a>
+<a class="nd" href="#buoc3" aria-label="Bước 3: Bán xong"><circle cx="265" cy="265" r="25" fill="#fff6d6" stroke="#b92a14" stroke-width="6"/><text class="nm" x="265" y="267" text-anchor="middle" dominant-baseline="central" fill="#b92a14">3</text><text x="350" y="336" text-anchor="end" fill="#b92a14">Bán xong</text></a>
+<a class="nd" href="#buoc4" aria-label="Bước 4: Không nhập"><circle cx="265" cy="95" r="25" fill="#fff6d6" stroke="#b92a14" stroke-width="6"/><text class="nm" x="265" y="97" text-anchor="middle" dominant-baseline="central" fill="#b92a14">4</text><text x="350" y="40" text-anchor="end" fill="#b92a14">Không nhập</text></a>
+<circle r="8" fill="#fff6d6" stroke="#ffd23f" stroke-width="3" pointer-events="none"><animateMotion dur="16s" repeatCount="indefinite" path="M180 60A120 120 0 0 0 180 300A120 120 0 0 0 180 60"/></circle>
+</svg>
+</div>
+</header>
+
+<main class="list"><div class="in"><ol class="steps">
+<li class="step a" id="buoc1" data-n="1"><div class="top"><span class="n" aria-hidden="true">1</span><h2>Trồng chuối</h2></div><div class="stat"><b>Một tuần</b><span>chạy nước 1 lần</span></div><p class="more" id="more1"></p></li>
+<li class="step a" id="buoc2" data-n="2"><div class="top"><span class="n" aria-hidden="true">2</span><h2>Nuôi gà</h2></div><div class="stat"><b>Một tháng</b><span>cho ăn 1 lần</span></div><p class="more" id="more2"></p></li>
+<li class="step b" id="buoc3" data-n="3"><div class="top"><span class="n" aria-hidden="true">3</span><h2>Bán xong</h2></div><p class="claim">Không qua trung gian</p><p>Bán chuối và gà thẳng cho người mua.</p><p class="more" id="more3"></p><a class="proof" href="https://gathavuon.vercel.app/" target="_blank" rel="noopener">Xem vườn đang bán thật</a></li>
+<li class="step b" id="buoc4" data-n="4"><div class="top"><span class="n" aria-hidden="true">4</span><h2>Không nhập</h2></div><p class="claim">Cũng chẳng nhập hàng</p><p>Gà thì tự ấp còn chuối tự mọc.</p><p class="more" id="more4"></p></li>
+</ol></div></main>
+
+<footer class="foot"><div class="in">
+<div id="info"></div>
+<div class="cta" id="cta"><p>Muốn làm theo mô hình này?</p><a class="btn" href="https://zalo.me/0935662344" target="_blank" rel="noopener">Hỏi cách làm qua Zalo</a></div>
+</div></footer>
+<div class="bar" id="bar"><a class="btn" href="https://zalo.me/0935662344" target="_blank" rel="noopener">Hỏi cách làm qua Zalo</a></div>
+
+<script>
+/* Điền nội dung vào đây. Ô nào để trống "" thì không hiện trên trang. */
+var INFO={more:{1:"",2:"",3:"",4:""},
+batdau:["Bắt đầu cần gì",[["Đất, vườn",""],["Giống chuối",""],["Giống gà đầu tiên",""],["Chuồng, rào",""]]],
+sothat:["Con số thật của vườn",[["Diện tích vườn",""],["Số cây chuối",""],["Số gà",""],["Vốn ban đầu",""],["Thu mỗi kỳ bán",""]]],
+luuy:["Lưu ý trước khi làm",[["Điều kiện đất, khí hậu",""],["Rủi ro đã gặp",""]]]};
+(function(){
+for(var i=1;i<=4;i++){var p=document.getElementById("more"+i),t=(INFO.more[i]||"").trim();if(t)p.textContent=t;else p.remove()}
+var box=document.getElementById("info");
+["batdau","sothat","luuy"].forEach(function(k){
+var rows=INFO[k][1].filter(function(r){return r[1].trim()});if(!rows.length)return;
+var s=document.createElement("section");s.className="blk";
+var h=document.createElement("h2");h.textContent=INFO[k][0];s.appendChild(h);
+var dl=document.createElement("dl");dl.className="rows";
+rows.forEach(function(r){var d=document.createElement("div");d.className="row";
+var dt=document.createElement("dt");dt.textContent=r[0];var dd=document.createElement("dd");dd.textContent=r[1];
+d.appendChild(dt);d.appendChild(dd);dl.appendChild(d)});
+s.appendChild(dl);box.appendChild(s)});
+var calm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(calm)document.querySelectorAll("animateMotion").forEach(function(a){a.parentNode.remove()});
+var io="IntersectionObserver" in window;
+if(io&&!calm){document.documentElement.classList.add("rv");
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("show");ro.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".step").forEach(function(s,i){s.style.transitionDelay=(i%2)*.1+"s";ro.observe(s)})}
+if(io){var bar=document.getElementById("bar");
+new IntersectionObserver(function(es){bar.classList.toggle("off",es[0].isIntersecting)}).observe(document.getElementById("cta"))}
+})();
+</script>
+</body>
+</html>
